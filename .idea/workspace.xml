@@ -26,7 +26,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/opencart-examples/oc_theme_example&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/opencart-demo/web&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -52,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1654093317511</updated>
       <workItem from="1654093318644" duration="12194000" />
-      <workItem from="1654372810278" duration="6411000" />
+      <workItem from="1654372810278" duration="22002000" />
+      <workItem from="1654589803607" duration="6204000" />
     </task>
     <servers />
   </component>

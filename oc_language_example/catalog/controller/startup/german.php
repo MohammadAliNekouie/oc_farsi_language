@@ -23,10 +23,15 @@ class German extends \Opencart\System\Engine\Controller {
 		}
 
 		// Language
-		$language = new \Opencart\System\Library\Language($this->config->get('config_language_admin'));
+		$language = new \Opencart\System\Library\Language('de');
+
 		$language->addPath(DIR_LANGUAGE);
 		$language->load($this->config->get('config_language_admin'));
 
 		$this->registry->set('language', $language);
+	}
+
+	public function override($route, $args, $data = []): void {
+
 	}
 }

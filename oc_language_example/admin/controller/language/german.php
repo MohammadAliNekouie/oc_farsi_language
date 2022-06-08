@@ -70,12 +70,21 @@ class German extends \Opencart\System\Engine\Controller {
 
 		$startup_data = [
 			'code'       => 'language_german',
-			'action'     => 'extension/language_example/language/german',
+			'action'     => 'catalog/extension/language_example/startup/german',
 			'status'     => 1,
 			'sort_order' => 2
 		];
 
 		$this->load->model('setting/startup');
+
+		$this->model_setting_startup->addStartup($startup_data);
+
+		$startup_data = [
+			'code'       => 'language_german',
+			'action'     => 'admin/extension/language_example/startup/german',
+			'status'     => 1,
+			'sort_order' => 2
+		];
 
 		$this->model_setting_startup->addStartup($startup_data);
 	}
@@ -91,6 +100,6 @@ class German extends \Opencart\System\Engine\Controller {
 
 		$this->load->model('setting/startup');
 
-		$this->model_setting_startup->deleteStartupByCode('de');
+		$this->model_setting_startup->deleteStartupByCode('language_german');
 	}
 }
