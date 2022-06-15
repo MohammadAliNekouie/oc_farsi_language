@@ -1,37 +1,20 @@
 <?php
-namespace LanguageExample\Admin\Controller\Extension\Opencart\Startup;
+namespace Opencart\Catalog\Controller\Extension\OcLanguageExample\Startup;
 class German extends \Opencart\System\Engine\Controller {
 	public function index(): void {
+		if ($this->config->get('language_german_status')) {
+			$code = 'de-de';
 
+			if (isset($this->request->get['language']) && $this->request->get['language'] == $code) {
+				$this->load->model('localisation/language');
 
-		// Added this code so that backup and restore doesn't show text_restore
-		$code = $this->config->get('config_language_admin');
+				$language_info = $this->model_localisation_language->getLanguageByCode($code);
 
-		if ($code) {
-			$this->session->data['language_admin'] = $code;
-		} elseif (isset($this->session->data['language_admin'])) {
-			$this->config->set('config_language_admin', $this->session->data['language_admin']);
+				if ($language_info) {
+					$this->language->addPath(DIR_EXTENSION . 'oc_language_example/catalog/language/');
+					$this->language->load($code);
+				}
+			}
 		}
-
-		// Language
-		$this->load->model('localisation/language');
-
-		$language_info = $this->model_localisation_language->getLanguageByCode($this->config->get('config_language_admin'));
-
-		if ($language_info) {
-			$this->config->set('config_language_id', $language_info['language_id']);
-		}
-
-		// Language
-		$language = new \Opencart\System\Library\Language('de');
-
-		$language->addPath(DIR_LANGUAGE);
-		$language->load($this->config->get('config_language_admin'));
-
-		$this->registry->set('language', $language);
-	}
-
-	public function override($route, $args, $data = []): void {
-
 	}
 }

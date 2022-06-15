@@ -1,8 +1,8 @@
 <?php
-namespace LanguageExample\Admin\Controller\Extension\Opencart\Language;
+namespace Opencart\Admin\Controller\Extension\OcLanguageExample\Language;
 class German extends \Opencart\System\Engine\Controller {
 	public function index(): void {
-		$this->load->language('extension/language_example/language/german');
+		$this->load->language('extension/oc_language_example/language/german');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -20,10 +20,10 @@ class German extends \Opencart\System\Engine\Controller {
 
 		$data['breadcrumbs'][] = [
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('extension/language_example/language/german', 'user_token=' . $this->session->data['user_token'])
+			'href' => $this->url->link('extension/oc_language_example/language/german', 'user_token=' . $this->session->data['user_token'])
 		];
 
-		$data['save'] = $this->url->link('extension/language_example/language/german|save', 'user_token=' . $this->session->data['user_token']);
+		$data['save'] = $this->url->link('extension/oc_language_example/language/german|save', 'user_token=' . $this->session->data['user_token']);
 		$data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=language');
 
 		$data['language_german_status'] = $this->config->get('language_german_status');
@@ -32,15 +32,15 @@ class German extends \Opencart\System\Engine\Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('extension/language_example/language/german', $data));
+		$this->response->setOutput($this->load->view('extension/oc_language_example/language/german', $data));
 	}
 
 	public function save(): void {
-		$this->load->language('extension/language_example/language/german');
+		$this->load->language('extension/oc_language_example/language/german');
 
 		$json = [];
 
-		if (!$this->user->hasPermission('modify', 'extension/language_example/language/german')) {
+		if (!$this->user->hasPermission('modify', 'extension/oc_language_example/language/german')) {
 			$json['error'] = $this->language->get('error_permission');
 		}
 
@@ -57,49 +57,58 @@ class German extends \Opencart\System\Engine\Controller {
 	}
 
 	public function install(): void {
-		$language_data = [
-			'name'       => 'German',
-			'code'       => 'de',
-			'locale'     => 'de-de',
-			'sort_order' => 1
-		];
+		if ($this->user->hasPermission('modify', 'extension/oc_language_example/language/german')) {
+			// Add language
+			$language_data = [
+				'name'       => 'German',
+				'code'       => 'de-de',
+				'locale'     => 'de-de',
+				'extension'  => 'oc_language_example',
+				'status'     => 1,
+				'sort_order' => 1
+			];
 
-		$this->load->model('localisation/language');
+			$this->load->model('localisation/language');
 
-		$this->model_localisation_language->addLanguage($language_data);
+			$this->model_localisation_language->addLanguage($language_data);
 
-		$startup_data = [
-			'code'       => 'language_german',
-			'action'     => 'catalog/extension/language_example/startup/german',
-			'status'     => 1,
-			'sort_order' => 2
-		];
+			// Add startup to catalog
+			$startup_data = [
+				'code'       => 'language_german',
+				'action'     => 'catalog/extension/oc_language_example/startup/german',
+				'status'     => 1,
+				'sort_order' => 2
+			];
 
-		$this->load->model('setting/startup');
+			// Add startup for admin
+			$this->load->model('setting/startup');
 
-		$this->model_setting_startup->addStartup($startup_data);
+			$this->model_setting_startup->addStartup($startup_data);
 
-		$startup_data = [
-			'code'       => 'language_german',
-			'action'     => 'admin/extension/language_example/startup/german',
-			'status'     => 1,
-			'sort_order' => 2
-		];
+			$startup_data = [
+				'code'       => 'language_german',
+				'action'     => 'admin/extension/oc_language_example/startup/german',
+				'status'     => 1,
+				'sort_order' => 2
+			];
 
-		$this->model_setting_startup->addStartup($startup_data);
+			$this->model_setting_startup->addStartup($startup_data);
+		}
 	}
 
 	public function uninstall(): void {
-		$this->load->model('localisation/language');
+		if ($this->user->hasPermission('modify', 'extension/oc_language_example/language/german')) {
+			$this->load->model('localisation/language');
 
-		$language_info = $this->model_localisation_language->getLanguageByCode('de');
+			$language_info = $this->model_localisation_language->getLanguageByCode('de-de');
 
-		if ($language_info) {
-			$this->model_localisation_language->deleteLanguage($language_info['language_id']);
+			if ($language_info) {
+				$this->model_localisation_language->deleteLanguage($language_info['language_id']);
+			}
+
+			$this->load->model('setting/startup');
+
+			$this->model_setting_startup->deleteStartupByCode('language_german');
 		}
-
-		$this->load->model('setting/startup');
-
-		$this->model_setting_startup->deleteStartupByCode('language_german');
 	}
 }
