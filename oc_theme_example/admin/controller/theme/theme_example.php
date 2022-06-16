@@ -39,7 +39,7 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 		$this->load->language('extension/oc_theme_example/theme/theme_example');
 
 		$json = [];
-print_r($this->request->post);
+
 		if (!$this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
 			$json['error'] = $this->language->get('error_permission');
 		}
@@ -57,7 +57,7 @@ print_r($this->request->post);
 	}
 
 	public function install(): void {
-		//if ($this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
+		if ($this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
 			// Add startup to catalog
 			$startup_data = [
 				'code'        => 'theme_example',
@@ -71,14 +71,14 @@ print_r($this->request->post);
 			$this->load->model('setting/startup');
 
 			$this->model_setting_startup->addStartup($startup_data);
-		//}
+		}
 	}
 
 	public function uninstall(): void {
-		//if ($this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
+		if ($this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
 			$this->load->model('setting/startup');
 
 			$this->model_setting_startup->deleteStartupByCode('theme_example');
-		//}
+		}
 	}
 }
