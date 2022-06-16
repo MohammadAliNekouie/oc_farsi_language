@@ -5,7 +5,7 @@ class German extends \Opencart\System\Engine\Controller {
 		if ($this->config->get('language_german_status')) {
 			$code = 'de-de';
 
-			if (isset($this->session->data['language_admin']) && $this->session->data['language_admin'] == $code) {
+			if (isset($this->session->data['language']) && $this->session->data['language'] == $code) {
 				$this->load->model('localisation/language');
 
 				$language_info = $this->model_localisation_language->getLanguageByCode($code);
