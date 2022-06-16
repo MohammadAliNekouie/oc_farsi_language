@@ -75,7 +75,7 @@ class German extends \Opencart\System\Engine\Controller {
 			// Add startup to catalog
 			$startup_data = [
 				'code'        => 'language_german',
-				'description' => 'Geman Catalog Language Translation',
+				'description' => 'Geman catalog language translation example',
 				'action'      => 'catalog/extension/oc_language_example/startup/german',
 				'status'      => 1,
 				'sort_order'  => 2
@@ -88,7 +88,7 @@ class German extends \Opencart\System\Engine\Controller {
 
 			$startup_data = [
 				'code'        => 'language_german',
-				'description' => 'Geman Admin Language Translation',
+				'description' => 'Geman admin language translation example',
 				'action'      => 'admin/extension/oc_language_example/startup/german',
 				'status'      => 1,
 				'sort_order'  => 2
