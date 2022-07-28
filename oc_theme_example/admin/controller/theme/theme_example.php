@@ -28,6 +28,10 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 
 		$data['theme_example_status'] = $this->config->get('theme_example_status');
 
+		$this->load->library('extension/oc_theme_example/my_class');
+
+		//$this->model_setting_setting->editSetting('theme_example', $this->request->post);
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');

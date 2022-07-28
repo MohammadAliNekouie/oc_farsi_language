@@ -10,9 +10,7 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 	}
 
 	public function event(string &$route, array &$args, mixed &$output): void {
-		$override = [
-			'common/header'
-		];
+		$override = ['common/header'];
 
 		if (in_array($route, $override)) {
 			$route = 'extension/oc_theme_example/' . $route;
