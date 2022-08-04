@@ -1,5 +1,5 @@
 <?php
-namespace Opencart\Catalog\Controller\Extension\Opencart\Payment;
+namespace Opencart\Catalog\Controller\Extension\OcPaymentExample\Payment;
 class CreditCard extends \Opencart\System\Engine\Controller {
 	public function index(): string {
 		$this->load->language('extension/opencart/payment/credit_card');

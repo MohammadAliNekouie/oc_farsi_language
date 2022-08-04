@@ -1,5 +1,5 @@
 <?php
-namespace Opencart\Catalog\Model\Extension\Opencart\Payment;
+namespace Opencart\Catalog\Model\Extension\OcPaymentExample\Payment;
 class CreditCard extends \Opencart\System\Engine\Model {
 	public function getMethod(array $address): array {
 		$this->load->language('extension/opencart/payment/credit_card');

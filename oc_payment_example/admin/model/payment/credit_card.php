@@ -1,5 +1,5 @@
 <?php
-namespace Opencart\Admin\Model\Extension\Opencart\Payment;
+namespace Opencart\Admin\Model\Extension\OcPaymentExample\Payment;
 class CreditCard extends \Opencart\System\Engine\Model {
 	public function charge(int $customer_id, int $customer_payment_id, float $amount): int {
 		$this->load->language('extension/opencart/payment/credit_card');
