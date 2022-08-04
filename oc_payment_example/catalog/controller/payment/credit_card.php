@@ -2,7 +2,7 @@
 namespace Opencart\Catalog\Controller\Extension\OcPaymentExample\Payment;
 class CreditCard extends \Opencart\System\Engine\Controller {
 	public function index(): string {
-		$this->load->language('extension/opencart/payment/credit_card');
+		$this->load->language('extension/oc_payment_example/payment/credit_card');
 
 		$data['logged'] = $this->customer->isLogged();
 
@@ -20,11 +20,11 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 
 		$data['language'] = $this->config->get('config_language');
 
-		return $this->load->view('extension/opencart/payment/credit_card', $data);
+		return $this->load->view('extension/oc_payment_example/payment/credit_card', $data);
 	}
 
 	public function confirm(): void {
-		$this->load->language('extension/opencart/payment/credit_card');
+		$this->load->language('extension/oc_payment_example/payment/credit_card');
 
 		$json = [];
 

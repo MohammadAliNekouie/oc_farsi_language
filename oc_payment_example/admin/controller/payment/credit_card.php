@@ -2,7 +2,7 @@
 namespace Opencart\Admin\Controller\Extension\OcPaymentExample\Payment;
 class CreditCard extends \Opencart\System\Engine\Controller {
 	public function index(): void {
-		$this->load->language('extension/opencart/payment/credit_card');
+		$this->load->language('extension/oc_payment_example/payment/credit_card');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -20,10 +20,10 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 
 		$data['breadcrumbs'][] = [
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('extension/opencart/payment/credit_card', 'user_token=' . $this->session->data['user_token'])
+			'href' => $this->url->link('extension/oc_payment_example/payment/credit_card', 'user_token=' . $this->session->data['user_token'])
 		];
 
-		$data['save'] = $this->url->link('extension/opencart/payment/credit_card|save', 'user_token=' . $this->session->data['user_token']);
+		$data['save'] = $this->url->link('extension/oc_payment_example/payment/credit_card|save', 'user_token=' . $this->session->data['user_token']);
 		$data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=payment');
 
 		$data['payment_credit_card_response'] = $this->config->get('payment_credit_card_response');
@@ -49,15 +49,15 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('extension/opencart/payment/credit_card', $data));
+		$this->response->setOutput($this->load->view('extension/oc_payment_example/payment/credit_card', $data));
 	}
 
 	public function save(): void {
-		$this->load->language('extension/opencart/payment/credit_card');
+		$this->load->language('extension/oc_payment_example/payment/credit_card');
 
 		$json = [];
 
-		if (!$this->user->hasPermission('modify', 'extension/opencart/payment/credit_card')) {
+		if (!$this->user->hasPermission('modify', 'extension/oc_payment_example/payment/credit_card')) {
 			$json['error'] = $this->language->get('error_permission');
 		}
 
