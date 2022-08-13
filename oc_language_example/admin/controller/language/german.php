@@ -48,6 +48,15 @@ class German extends \Opencart\System\Engine\Controller {
 			$this->load->model('setting/setting');
 
 			$this->model_setting_setting->editSetting('language_german', $this->request->post);
+			
+			// Update settings location language
+			$this->load->model('localisation/language');
+
+			$language_info = $this->model_localisation_language-> getLanguageByCode('de-de');
+
+			$language_info['status'] = (empty($this->request->post['language_german_status']) ? '0' : '1');
+
+			$this->model_localisation_language->editLanguage($language_info['language_id'], $language_info);
 
 			$json['success'] = $this->language->get('text_success');
 		}
@@ -60,9 +69,9 @@ class German extends \Opencart\System\Engine\Controller {
 		if ($this->user->hasPermission('modify', 'extension/oc_language_example/language/german')) {
 			// Add language
 			$language_data = [
-				'name'       => 'German',
+				'name'       => 'Deutsch',
 				'code'       => 'de-de',
-				'locale'     => 'de-de',
+				'locale'     => 'de,de-de,de-DE,de_DE',
 				'extension'  => 'oc_language_example',
 				'status'     => 1,
 				'sort_order' => 1
