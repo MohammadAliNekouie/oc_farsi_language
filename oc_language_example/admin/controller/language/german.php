@@ -71,30 +71,6 @@ class German extends \Opencart\System\Engine\Controller {
 			$this->load->model('localisation/language');
 
 			$this->model_localisation_language->addLanguage($language_data);
-
-			// Add startup to catalog
-			$startup_data = [
-				'code'        => 'language_german',
-				'description' => 'Geman catalog language translation example',
-				'action'      => 'catalog/extension/oc_language_example/startup/german',
-				'status'      => 1,
-				'sort_order'  => 2
-			];
-
-			// Add startup for admin
-			$this->load->model('setting/startup');
-
-			$this->model_setting_startup->addStartup($startup_data);
-
-			$startup_data = [
-				'code'        => 'language_german',
-				'description' => 'Geman admin language translation example',
-				'action'      => 'admin/extension/oc_language_example/startup/german',
-				'status'      => 1,
-				'sort_order'  => 2
-			];
-
-			$this->model_setting_startup->addStartup($startup_data);
 		}
 	}
 
