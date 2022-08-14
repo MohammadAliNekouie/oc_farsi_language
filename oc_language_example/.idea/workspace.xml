@@ -27,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/opencart-master/upload",
+    "last_opened_file_path": "C:/xampp/htdocs/opencart-examples/oc_language_example",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -43,6 +43,7 @@
       <workItem from="1655283587802" duration="3671000" />
       <workItem from="1655293571363" duration="2296000" />
       <workItem from="1655396942932" duration="3882000" />
+      <workItem from="1660481475083" duration="5781000" />
     </task>
     <servers />
   </component>
