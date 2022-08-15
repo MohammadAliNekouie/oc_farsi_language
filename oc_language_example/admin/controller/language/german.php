@@ -57,7 +57,7 @@ class German extends \Opencart\System\Engine\Controller {
 	}
 
 	public function install(): void {
-		if ($this->user->hasPermission('modify', 'extension/oc_language_example/language/german')) {
+		if ($this->request->get['route'] == 'extension/language|install') {
 			// Add language
 			$language_data = [
 				'name'       => 'German',
@@ -75,7 +75,7 @@ class German extends \Opencart\System\Engine\Controller {
 	}
 
 	public function uninstall(): void {
-		if ($this->user->hasPermission('modify', 'extension/oc_language_example/language/german')) {
+		if ($this->request->get['route'] == 'extension/language|uninstall') {
 			$this->load->model('localisation/language');
 
 			$language_info = $this->model_localisation_language->getLanguageByCode('de-de');
@@ -83,10 +83,6 @@ class German extends \Opencart\System\Engine\Controller {
 			if ($language_info) {
 				$this->model_localisation_language->deleteLanguage($language_info['language_id']);
 			}
-
-			$this->load->model('setting/startup');
-
-			$this->model_setting_startup->deleteStartupByCode('language_german');
 		}
 	}
 }

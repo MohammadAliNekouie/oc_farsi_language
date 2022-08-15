@@ -28,10 +28,6 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 
 		$data['theme_example_status'] = $this->config->get('theme_example_status');
 
-		$this->load->library('extension/oc_theme_example/my_class');
-
-		//$this->model_setting_setting->editSetting('theme_example', $this->request->post);
-
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
@@ -61,7 +57,7 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 	}
 
 	public function install(): void {
-		if ($this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
+		if ($this->request->get['route'] == 'extension/theme|install') {
 			// Add startup to catalog
 			$startup_data = [
 				'code'        => 'theme_example',
@@ -79,7 +75,7 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 	}
 
 	public function uninstall(): void {
-		if ($this->user->hasPermission('modify', 'extension/oc_theme_example/theme/theme_example')) {
+		if ($this->request->get['route'] == 'extension/theme|uninstall') {
 			$this->load->model('setting/startup');
 
 			$this->model_setting_startup->deleteStartupByCode('theme_example');
