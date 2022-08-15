@@ -57,7 +57,7 @@ class German extends \Opencart\System\Engine\Controller {
 	}
 
 	public function install(): void {
-		if ($this->request->get['route'] == 'extension/language|install') {
+		if ($this->user->hasPermission('modify', 'extension/language')) {
 			// Add language
 			$language_data = [
 				'name'       => 'German',
@@ -75,7 +75,7 @@ class German extends \Opencart\System\Engine\Controller {
 	}
 
 	public function uninstall(): void {
-		if ($this->request->get['route'] == 'extension/language|uninstall') {
+		if ($this->user->hasPermission('modify', 'extension/language')) {
 			$this->load->model('localisation/language');
 
 			$language_info = $this->model_localisation_language->getLanguageByCode('de-de');
