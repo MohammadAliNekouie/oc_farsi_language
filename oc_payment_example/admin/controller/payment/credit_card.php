@@ -45,6 +45,8 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 		$data['payment_credit_card_status'] = $this->config->get('payment_credit_card_status');
 		$data['payment_credit_card_sort_order'] = $this->config->get('payment_credit_card_sort_order');
 
+		$data['report'] = $this->load->controller('extension/oc_payment_example/payment/credit_card|report');
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
@@ -71,5 +73,66 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
+	}
+
+	public function install(): void {
+		if ($this->user->hasPermission('modify', 'extension/payment')) {
+			$this->load->model('extension/oc_payment_example/payment/credit_card');
+
+			$this->model_extension_oc_payment_example_payment_credit_card->install();
+		}
+	}
+
+	public function uninstall(): void {
+		if ($this->user->hasPermission('modify', 'extension/payment')) {
+			$this->load->model('extension/oc_payment_example/payment/credit_card');
+
+			$this->model_extension_oc_payment_example_payment_credit_card->uninstall();
+		}
+	}
+
+	public function report(): void {
+		$this->load->language('extension/oc_payment_example/payment/credit_card');
+
+		$this->response->setOutput($this->getReport());
+	}
+
+	private function getReport(): string {
+		if (isset($this->request->get['page'])) {
+			$page = (int)$this->request->get['page'];
+		} else {
+			$page = 1;
+		}
+
+		$data['reports'] = [];
+
+		$this->load->model('extension/oc_payment_example/payment/credit_card');
+
+		$results = $this->model_extension_oc_payment_example_payment_credit_card->getReports(($page - 1) * 10, 10);
+
+		foreach ($results as $result) {
+			$data['reports'][] = [
+				'order_id'     => $result['order_id'],
+				'card'         => $result['card'],
+				'amount'       => $result['amount'],
+				'response'     => $result['response'],
+				'status'       => $result['status'],
+				'date_added'   => date($this->language->get('datetime_format'), strtotime($result['date_added'])),
+				'filter_order' => $this->url->link('customer/customer', 'user_token=' . $this->session->data['user_token'] . '&filter_ip=' . $result['ip'])
+			];
+		}
+
+		$report_total = $this->model_extension_oc_payment_example_payment_credit_card->getTotalReports();
+
+		$data['pagination'] = $this->load->controller('common/pagination', [
+			'total' => $report_total,
+			'page'  => $page,
+			'limit' => $this->config->get('config_pagination_admin'),
+			'url'   => $this->url->link('extension/oc_payment_example/payment/credit_card|report', 'user_token=' . $this->session->data['user_token'] . '&download_id=' . $download_id . '&page={page}')
+		]);
+
+		$data['results'] = sprintf($this->language->get('text_pagination'), ($report_total) ? (($page - 1) * 10) + 1 : 0, ((($page - 1) * 10) > ($report_total - 10)) ? $report_total : ((($page - 1) * 10) + 10), $report_total, ceil($report_total / 10));
+
+		return $this->load->view('extension/oc_payment_example/payment/credit_card_report', $data);
 	}
 }

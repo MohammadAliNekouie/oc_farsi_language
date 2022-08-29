@@ -9,6 +9,7 @@ $_['text_success']          = 'Success: You have modified credit card payment mo
 $_['text_edit']             = 'Edit Credit Card';
 $_['text_approve']          = 'Approve';
 $_['text_deny']             = 'Deny';
+$_['text_report']           = 'Report';
 
 // Entry
 $_['entry_response']        = 'Card Processor Response';
