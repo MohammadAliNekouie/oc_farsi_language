@@ -114,9 +114,9 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 			$data['reports'][] = [
 				'order_id'     => $result['order_id'],
 				'card'         => $result['card'],
-				'amount'       => $result['amount'],
+				'amount'       => $this->curency->format($result['amount'], $this->config->get('config_currency')),
 				'response'     => $result['response'],
-				'status'       => $result['status'],
+				'status'       => $result['order_status'],
 				'date_added'   => date($this->language->get('datetime_format'), strtotime($result['date_added'])),
 				'filter_order' => $this->url->link('customer/customer', 'user_token=' . $this->session->data['user_token'] . '&filter_ip=' . $result['ip'])
 			];
@@ -128,7 +128,7 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 			'total' => $report_total,
 			'page'  => $page,
 			'limit' => $this->config->get('config_pagination_admin'),
-			'url'   => $this->url->link('extension/oc_payment_example/payment/credit_card|report', 'user_token=' . $this->session->data['user_token'] . '&download_id=' . $download_id . '&page={page}')
+			'url'   => $this->url->link('extension/oc_payment_example/payment/credit_card|report', 'user_token=' . $this->session->data['user_token'] . '&page={page}')
 		]);
 
 		$data['results'] = sprintf($this->language->get('text_pagination'), ($report_total) ? (($page - 1) * 10) + 1 : 0, ((($page - 1) * 10) > ($report_total - 10)) ? $report_total : ((($page - 1) * 10) + 10), $report_total, ceil($report_total / 10));

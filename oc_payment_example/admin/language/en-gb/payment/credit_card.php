@@ -11,6 +11,15 @@ $_['text_approve']          = 'Approve';
 $_['text_deny']             = 'Deny';
 $_['text_report']           = 'Report';
 
+// Column
+$_['column_order']          = 'Order ID';
+$_['column_card']           = 'Credit Card';
+$_['column_amount']         = 'Amount';
+$_['column_response']       = 'Response';
+$_['column_status']         = 'Order Status';
+$_['column_date_added']     = 'Date Added';
+$_['column_action']         = 'Action';
+
 // Entry
 $_['entry_response']        = 'Card Processor Response';
 $_['entry_approved_status'] = 'Approved Status';
