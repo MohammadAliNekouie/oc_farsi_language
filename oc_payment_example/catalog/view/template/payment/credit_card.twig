@@ -56,7 +56,7 @@ $('#form-credit-card').on('submit', function (e) {
     var element = this;
 
     $.ajax({
-        url: 'index.php?route=extension/opencart/payment/credit_card|confirm&language={{ language }}',
+        url: 'index.php?route=extension/opencart/payment/credit_card.confirm&language={{ language }}',
         type: 'post',
         data: $('#form-credit-card').serialize(),
         dataType: 'json',

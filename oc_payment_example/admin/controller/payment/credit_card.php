@@ -23,7 +23,7 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 			'href' => $this->url->link('extension/oc_payment_example/payment/credit_card', 'user_token=' . $this->session->data['user_token'])
 		];
 
-		$data['save'] = $this->url->link('extension/oc_payment_example/payment/credit_card|save', 'user_token=' . $this->session->data['user_token']);
+		$data['save'] = $this->url->link('extension/oc_payment_example/payment/credit_card.save', 'user_token=' . $this->session->data['user_token']);
 		$data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=payment');
 
 		$data['payment_credit_card_response'] = $this->config->get('payment_credit_card_response');
@@ -45,7 +45,7 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 		$data['payment_credit_card_status'] = $this->config->get('payment_credit_card_status');
 		$data['payment_credit_card_sort_order'] = $this->config->get('payment_credit_card_sort_order');
 
-		$data['report'] = $this->load->controller('extension/oc_payment_example/payment/credit_card|report');
+		$data['report'] = $this->load->controller('extension/oc_payment_example/payment/credit_card.report');
 
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
@@ -112,13 +112,13 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 
 		foreach ($results as $result) {
 			$data['reports'][] = [
-				'order_id'     => $result['order_id'],
-				'card'         => $result['card'],
-				'amount'       => $this->curency->format($result['amount'], $this->config->get('config_currency')),
-				'response'     => $result['response'],
-				'status'       => $result['order_status'],
-				'date_added'   => date($this->language->get('datetime_format'), strtotime($result['date_added'])),
-				'filter_order' => $this->url->link('customer/customer', 'user_token=' . $this->session->data['user_token'] . '&filter_ip=' . $result['ip'])
+				'order_id'   => $result['order_id'],
+				'card'       => $result['card'],
+				'amount'     => $this->curency->format($result['amount'], $this->config->get('config_currency')),
+				'response'   => $result['response'],
+				'status'     => $result['order_status'],
+				'date_added' => date($this->language->get('datetime_format'), strtotime($result['date_added'])),
+				'order'      => $this->url->link('sale/order.info', 'user_token=' . $this->session->data['user_token'] . '&order_id=' . $result['order_id'])
 			];
 		}
 
@@ -128,7 +128,7 @@ class CreditCard extends \Opencart\System\Engine\Controller {
 			'total' => $report_total,
 			'page'  => $page,
 			'limit' => $this->config->get('config_pagination_admin'),
-			'url'   => $this->url->link('extension/oc_payment_example/payment/credit_card|report', 'user_token=' . $this->session->data['user_token'] . '&page={page}')
+			'url'   => $this->url->link('extension/oc_payment_example/payment/credit_card.report', 'user_token=' . $this->session->data['user_token'] . '&page={page}')
 		]);
 
 		$data['results'] = sprintf($this->language->get('text_pagination'), ($report_total) ? (($page - 1) * 10) + 1 : 0, ((($page - 1) * 10) > ($report_total - 10)) ? $report_total : ((($page - 1) * 10) + 10), $report_total, ceil($report_total / 10));

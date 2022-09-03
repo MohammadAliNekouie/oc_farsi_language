@@ -5,7 +5,7 @@ class ThemeExample extends \Opencart\System\Engine\Controller {
 		if ($this->config->get('theme_example_status')) {
 			// Add event via code instead of DB
 			// Could also just set view/common/header/before
-			$this->event->register('view/*/before', new \Opencart\System\Engine\Action('extension/oc_theme_example/startup/theme_example|event'));
+			$this->event->register('view/*/before', new \Opencart\System\Engine\Action('extension/oc_theme_example/startup/theme_example.event'));
 		}
 	}
 

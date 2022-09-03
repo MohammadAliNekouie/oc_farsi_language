@@ -23,7 +23,7 @@ class German extends \Opencart\System\Engine\Controller {
 			'href' => $this->url->link('extension/oc_language_example/language/german', 'user_token=' . $this->session->data['user_token'])
 		];
 
-		$data['save'] = $this->url->link('extension/oc_language_example/language/german|save', 'user_token=' . $this->session->data['user_token']);
+		$data['save'] = $this->url->link('extension/oc_language_example/language/german.save', 'user_token=' . $this->session->data['user_token']);
 		$data['back'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=language');
 
 		$data['language_german_status'] = $this->config->get('language_german_status');
