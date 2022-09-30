@@ -1,24 +1,3 @@
-/.idea
-/.idea/*
-oc_theme_example/.idea/workspace.xml
-oc_theme_example/.idea/vcs.xml
-oc_theme_example/.idea/oc_theme_example.iml
-oc_theme_example/.idea/modules.xml
-oc_theme_example/.idea/inspectionProfiles/profiles_settings.xml
-oc_theme_example/.idea/deployment.xml
-oc_language_example/.idea/workspace.xml
-oc_language_example/.idea/workspace.xml
-oc_language_example/.idea/workspace.xml
-oc_language_example/.idea/workspace.xml
-oc_language_example/.idea/workspace.xml
-oc_language_example/.idea/workspace.xml
-oc_language_example/.idea/workspace.xml
-oc_payment_example/.idea/php.xml
-oc_payment_example/.idea/workspace.xml
-oc_payment_example/.idea/modules.xml
-oc_payment_example/.idea/deployment.xml
-oc_language_example/.idea/workspace.xml
-oc_payment_example/.idea/vcs.xml
-oc_language_example/.idea/workspace.xml
-oc_payment_example/.idea/oc_payment_example.iml
-oc_payment_example/.idea/inspectionProfiles/profiles_settings.xml
+may I ask you to check this repo for Farsi language in OC4
+
+https://github.com/MohammadAliNekouie/oc_farsi_language
