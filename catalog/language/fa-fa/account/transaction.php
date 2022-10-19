@@ -1,14 +1,14 @@
 <?php
 // Heading
-$_['heading_title']      = 'Your Transactions';
+$_['heading_title']      = 'تراکنش ها';
 
 // Column
-$_['column_date_added']  = 'Date Added';
-$_['column_description'] = 'Description';
-$_['column_amount']      = 'Amount (%s)';
+$_['column_date_added']  = 'تاریخ ثبت';
+$_['column_description'] = 'شرح';
+$_['column_amount']      = 'مبلغ (%s)';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_transaction']   = 'Your Transactions';
-$_['text_total']         = 'Your current balance is:';
-$_['text_no_results']    = 'You do not have any transactions!';
+$_['text_account']       = 'حساب کاربری';
+$_['text_transaction']   = 'تراکنش ها';
+$_['text_total']         = 'جمع کل:';
+$_['text_no_results']    = 'شما هیچ تراکنش ثبت شده ای ندارید';

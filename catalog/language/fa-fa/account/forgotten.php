@@ -1,25 +1,25 @@
 <?php
 // Heading
-$_['heading_title']      = 'Forgot Your Password?';
-$_['heading_reset']      = 'Reset your password';
+$_['heading_title']      = 'رمز عبور خود را فراموش کرده اید؟';
+$_['heading_reset']      = 'بازیابی رمز عبور';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_forgotten']     = 'Forgotten Password';
-$_['text_your_email']    = 'Your E-Mail Address';
-$_['text_email']         = 'Enter the e-mail address associated with your account. Click submit to have a password reset link e-mailed to you.';
-$_['text_password']      = 'Enter the new password you wish to use.';
-$_['text_success']       = 'Success: Your password has been successfully updated.';
+$_['text_account']       = 'حساب کاربری';
+$_['text_forgotten']     = 'فراموشی رمز عبور';
+$_['text_your_email']    = 'ایمیل';
+$_['text_email']         = 'آدرس ایمیل خود را وارد کنید و کلید تایید را بزنید تا ایمیل حاوی لینک بازیابی رمز عبور برای شما ارسال شود';
+$_['text_password']      = 'رمز عبور جدید را وارد کنید';
+$_['text_success']       = 'رمز عبور جدید با موفقیت ثبت شد';
 
 // Entry
-$_['entry_email']        = 'E-Mail Address';
-$_['entry_new_password'] = 'New Password';
-$_['entry_password']     = 'Password';
-$_['entry_confirm']      = 'Confirm';
+$_['entry_email']        = 'آدرس ایمیل';
+$_['entry_new_password'] = 'رمز عبور جدید';
+$_['entry_password']     = 'رمز عبور';
+$_['entry_confirm']      = 'تایید';
 
 // Error
-$_['error_email']        = 'E-Mail Address does not appear to be valid!';
-$_['error_not_found']    = 'Warning: The E-Mail Address was not found in our records!';
-$_['error_password']     = 'Password must be between 4 and 20 characters!';
-$_['error_confirm']      = 'Password and password confirmation do not match!';
-$_['error_code']         = 'Password reset code is invalid or was used previously!';
+$_['error_email']        = 'به نظر می رسد که ایمیل وارد شده معتبر نیست';
+$_['error_not_found']    = 'همچین ایمیلی نداریم!';
+$_['error_password']     = 'رمز عبور باید بین 4 الی 20 کاراکتر باشد';
+$_['error_confirm']      = 'رمز عبور و تکرار آن یکسان نیستند';
+$_['error_code']         = 'کد بازیابی نامعتبر است';

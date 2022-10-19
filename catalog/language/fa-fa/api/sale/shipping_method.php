@@ -1,9 +1,9 @@
 <?php
 // Text
-$_['text_success']           = 'Success: Shipping method has been set!';
+$_['text_success']           = 'روش حمل با موفقیت ثبت شد';
 
 // Error
-$_['error_shipping_address'] = 'Warning: Shipping address required!';
-$_['error_shipping_method']  = 'Warning: Shipping method required!';
-$_['error_no_shipping']      = 'Warning: No Shipping options are available!';
-$_['error_shipping']         = 'Warning: There are no products that require shipping';
+$_['error_shipping_address'] = 'آدرس ارسال مرسوله را مشخص نمایید';
+$_['error_shipping_method']  = 'روش حمل را تعیین نمایید';
+$_['error_no_shipping']      = 'هیج امکان ارسالی وجود ندارد';
+$_['error_shipping']         = 'این محصولات نیاز به حمل و ارسال ندارد';

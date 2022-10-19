@@ -1,39 +1,39 @@
 <?php
 // Heading
-$_['heading_title']      = 'Address Book';
+$_['heading_title']      = 'آدرس ها';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_address_book']  = 'Address Book Entries';
-$_['text_address_add']   = 'Add Address';
-$_['text_address_edit']  = 'Edit Address';
-$_['text_add']           = 'Your address has been successfully added';
-$_['text_edit']          = 'Your address has been successfully updated';
-$_['text_delete']        = 'Your address has been successfully deleted';
-$_['text_no_results']    = 'You have no addresses in your account.';
+$_['text_account']       = 'حساب کاربری';
+$_['text_address_book']  = 'آدرس ها';
+$_['text_address_add']   = 'افزودن نشانی جدید';
+$_['text_address_edit']  = 'ویرایش نشانی';
+$_['text_add']           = 'نشانی جدید با موفقیت ثبت شد';
+$_['text_edit']          = 'نشانی با موفقیت ویرایش شد';
+$_['text_delete']        = 'نشانی مورد نظر حذف شد';
+$_['text_no_results']    = 'شما هیچ نشانی ثبت شده ای ندارید';
 
 // Entry
-$_['entry_firstname']    = 'First Name';
-$_['entry_lastname']     = 'Last Name';
-$_['entry_company']      = 'Company';
-$_['entry_address_1']    = 'Address 1';
-$_['entry_address_2']    = 'Address 2';
-$_['entry_postcode']     = 'Post Code';
-$_['entry_city']         = 'City';
-$_['entry_country']      = 'Country';
-$_['entry_zone']         = 'Region / State';
-$_['entry_default']      = 'Default Address';
+$_['entry_firstname']    = 'نام';
+$_['entry_lastname']     = 'نام خانوادگی';
+$_['entry_company']      = 'نام شرکت';
+$_['entry_address_1']    = 'نشانی محل سکونت';
+$_['entry_address_2']    = 'نشانی دریافت مرسوله';
+$_['entry_postcode']     = 'کد پستی محل دریافت مرسوله';
+$_['entry_city']         = 'شهر';
+$_['entry_country']      = 'کشور';
+$_['entry_zone']         = 'استان';
+$_['entry_default']      = 'آدرس پیشفرض';
 
 // Error
-$_['error_token']        = 'Warning: Address token invalid!';
-$_['error_delete']       = 'Warning: You must have at least one address!';
-$_['error_default']      = 'Warning: You can not delete your default address!';
-$_['error_firstname']    = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']     = 'Last Name must be between 1 and 32 characters!';
-$_['error_address_1']    = 'Address must be between 3 and 128 characters!';
-$_['error_postcode']     = 'Postcode must be between 2 and 10 characters!';
-$_['error_city']         = 'City must be between 2 and 128 characters!';
-$_['error_country']      = 'Please select a country!';
-$_['error_zone']         = 'Please select a region / state!';
-$_['error_custom_field'] = '%s required!';
-$_['error_regex']        = '%s is not a valid input!';
+$_['error_token']        = 'هشدار : آدرس نامعتبر است';
+$_['error_delete']       = 'هشدار : شما باید حداقل یک نشانی برای دریافت مرسوله ثبت نمایید';
+$_['error_default']      = 'هشدار : شما نمی توانید آدرس پیشفرض خود را حذف نمایید';
+$_['error_firstname']    = 'نام شما باید بین 1 الی 32 کاراکتر باشد';
+$_['error_lastname']     = 'نام خانوادگی شما باید بین 1 الی 32 کاراکتر باشد';
+$_['error_address_1']    = 'آدرس شما باید بین 3 الی 128 کاراکتر باشد';
+$_['error_postcode']     = 'کد پستی باید 10 رقمی باشد';
+$_['error_city']         = 'نام شهر باید بین 2  تا 128 کاراکتر باشد';
+$_['error_country']      = 'لطفا کشور خود را انتخاب کنید';
+$_['error_zone']         = 'لطفا استان خود را انتخاب کنید';
+$_['error_custom_field'] = '%s این فیلد ضروری است';
+$_['error_regex']        = '%s مقدار این فیلد نامعتبر است';

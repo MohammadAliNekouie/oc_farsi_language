@@ -1,18 +1,18 @@
 <?php
 // Heading
-$_['heading_title']     = 'Downloads';
+$_['heading_title']     = 'دانلودها';
 
 // Text
-$_['text_account']      = 'Account';
-$_['text_downloads']    = 'Downloads';
-$_['text_no_results']   = 'You have not made any previous downloadable orders!';
+$_['text_account']      = 'حساب کاربری';
+$_['text_downloads']    = 'دانلودها';
+$_['text_no_results']   = 'شما تا کنون هیج سفارش قابل دانلودی نداشتید';
 
 // Column
-$_['column_order_id']   = 'Order ID';
-$_['column_name']       = 'Name';
-$_['column_size']       = 'Size';
-$_['column_date_added'] = 'Date Added';
+$_['column_order_id']   = 'شناسه سفارش';
+$_['column_name']       = 'نام فایل';
+$_['column_size']       = 'حجم فایل';
+$_['column_date_added'] = 'تاریخ اضافه شدن';
 
 // Error
-$_['error_not_found']    = 'Error: Could not find file %s !';
-$_['error_headers_sent'] = 'Error: Headers already sent out!';
+$_['error_not_found']    = 'خطا : فایل مورد نظر یافت نشد %s !';
+$_['error_headers_sent'] = 'خطار : فایل شما قبلا دانلود شده!';

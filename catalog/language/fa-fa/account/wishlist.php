@@ -1,23 +1,23 @@
 <?php
 // Heading
-$_['heading_title']   = 'My Wishlist';
+$_['heading_title']   = 'علاقه مندی ها';
 
 // Text
-$_['text_account']    = 'Account';
-$_['text_instock']    = 'In Stock';
-$_['text_wishlist']   = 'Wish List (%s)';
-$_['text_login']      = 'You must <a href="%s">login</a> or <a href="%s">create an account</a> to save <a href="%s">%s</a> to your <a href="%s">wish list</a>!';
-$_['text_success']    = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">wish list</a>!';
-$_['text_remove']     = 'Success: You have removed an item from your wishlist';
-$_['text_no_results'] = 'Your wish list is empty.';
+$_['text_account']    = 'حساب کاربری';
+$_['text_instock']    = 'موجود';
+$_['text_wishlist']   = 'علاقه مندی ها (%s)';
+$_['text_login']      = 'شما باید  <a href="%s">با حساب کاربری خود وارد شوید</a> یا <a href="%s">ثبت نام کنید</a> تا بتوانید <a href="%s">%s</a> را به  <a href="%s">لیست علاقه مندی های خود اضافه کنید</a>!';
+$_['text_success']    = 'شما با موفقیت <a href="%s">%s</a> را به <a href="%s">لیست علاقه مندی های خود اضافه کردید</a>!';
+$_['text_remove']     = 'شما با موفقیت این آیتم را از لیست علاقه مندی های خود حذف کردید';
+$_['text_no_results'] = 'لیست علاقه مندی های شما خالی است';
 
 // Column
-$_['column_image']    = 'Image';
-$_['column_name']     = 'Product Name';
-$_['column_model']    = 'Model';
-$_['column_stock']    = 'Stock';
-$_['column_price']    = 'Unit Price';
-$_['column_action']   = 'Action';
+$_['column_image']    = 'تصویر';
+$_['column_name']     = 'نام کالا';
+$_['column_model']    = 'مدل';
+$_['column_stock']    = 'موجود';
+$_['column_price']    = 'قیمت';
+$_['column_action']   = 'انجام شود';
 
 // Error
-$_['error_product']   = 'Warning: Product could not be found!';
+$_['error_product']   = 'هشدار ، کالا یافت نشد';

@@ -1,8 +1,8 @@
 <?php
 // Heading
-$_['heading_title'] = 'Your Account Has Been Created!';
+$_['heading_title'] = 'حساب کاربری شما ایجاد شد';
 
 // Text
-$_['text_success']  = '<p>Congratulations! Your new account has been successfully created!</p> <p>You can now take advantage of member privileges to enhance your online shopping experience with us.</p> <p>If you have ANY questions about the operation of this online shop, please e-mail the store owner.</p> <p>A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please <a href="%s">contact us</a>.</p>';
-$_['text_approval'] = '<p>Thank you for registering with %s!</p><p>You will be notified by e-mail once your account has been activated by the store owner.</p><p>If you have ANY questions about the operation of this online shop, please <a href="%s">contact the store owner</a>.</p>';
-$_['text_account']  = 'Account';
+$_['text_success']  = '<p>تبریک میگم ، حساب کاربری شما با موفقیت افتتاح شد</p> <p>الان شما میتونید از مزایای عضویت در سایت استفاده کنید</p> <p>اگر هرگونه مشکلی داشتید کافیه یه ایمیل به ما بزنید</p> <p>ما همیشه همراه شما هستیم</p>';
+$_['text_approval'] = '<p>از ثبت نام شما متشکریم %s!</p><p>تمامی مراحل خرید شما از طریق پیامک و ایمیل به شما اطلاع رسانی خواهد شد</p>';
+$_['text_account']  = 'حساب کاربری';

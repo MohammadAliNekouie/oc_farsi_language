@@ -1,15 +1,15 @@
 <?php
 // Heading
-$_['heading_title']    = 'Affiliate Tracking';
+$_['heading_title']    = 'رهگیری همکاری در فروش';
 
 // Text
-$_['text_account']     = 'Account';
-$_['text_description'] = 'To make sure you get paid for referrals you send to us we need to track the referral by placing a tracking code in the URL\'s linking to us. You can use the tools below to generate links to the %s web site.';
+$_['text_account']     = 'حساب کاربری';
+$_['text_description'] = 'برای اینکه مطمئن شوید که شما از فروش ایجاد شده سهمی خواهید داشت ، باید یک لینک اختصاصی از طریق این صفحه برای کالای مورد نظر خود بسازید و آن را با مشتری خود به اشتراک بگذارید';
 
 // Entry
-$_['entry_code']       = 'Your Tracking Code';
-$_['entry_generator']  = 'Tracking Link Generator';
-$_['entry_link']       = 'Tracking Link';
+$_['entry_code']       = 'کد رهگیری شما';
+$_['entry_generator']  = 'ایجاد لینک رهگیری';
+$_['entry_link']       = 'لینک رهگیری';
 
 // Help
-$_['help_generator']   = 'Type in the name of a product you would like to link to';
+$_['help_generator']   = 'نام کالایی که میخواهید لینک رهگیری برای آن ایجاد شود را وارد کنید';

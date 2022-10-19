@@ -1,25 +1,25 @@
 <?php
 // Heading
-$_['heading_title']      = 'My Account Information';
+$_['heading_title']      = 'حساب من';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_edit']          = 'Edit Information';
-$_['text_your_details']  = 'Your Personal Details';
-$_['text_success']       = 'Success: Your account has been successfully updated.';
+$_['text_account']       = 'حساب کاربری';
+$_['text_edit']          = 'ویرایش اطلاعات حساب';
+$_['text_your_details']  = 'اطلاعات شخصی';
+$_['text_success']       = 'اطلاعات حساب شما با موفقیت ویرایش شد';
 
 // Entry
-$_['entry_firstname']    = 'First Name';
-$_['entry_lastname']     = 'Last Name';
-$_['entry_email']        = 'E-Mail';
-$_['entry_telephone']    = 'Telephone';
+$_['entry_firstname']    = 'نام';
+$_['entry_lastname']     = 'نام خانوادگی';
+$_['entry_email']        = 'ایمیل';
+$_['entry_telephone']    = 'تلفن همراه';
 
 // Error
-$_['error_token']        = 'Warning: Edit token invalid!';
-$_['error_exists']       = 'Warning: E-Mail address is already registered!';
-$_['error_firstname']    = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']     = 'Last Name must be between 1 and 32 characters!';
-$_['error_email']        = 'E-Mail Address does not appear to be valid!';
-$_['error_telephone']    = 'Telephone must be between 3 and 32 characters!';
-$_['error_custom_field'] = '%s required!';
-$_['error_regex']        = '%s is not a valid input!';
+$_['error_token']        = 'هشدار : زمان ویرایش به اتمام رسیده است';
+$_['error_exists']       = 'هشدار : ایمیلی که وارد کرده اید قبلا ثبت شده';
+$_['error_firstname']    = 'نام شما باید بین 1 الی 32 کاراکتر باشد';
+$_['error_lastname']     = 'نام خانوادگی شما باید بین 1 الی 32 کاراکتر باشد';
+$_['error_email']        = 'آدرس ایمیل وارد شده نامعتبر است';
+$_['error_telephone']    = 'شماره تلفن همراه شما باید 11 رقمی همراه با صفر در ابتدا باشد';
+$_['error_custom_field'] = '%s این قسمت ضروری است!';
+$_['error_regex']        = '%s این اطلاعات غلط است!';

@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'The page you requested cannot be found!';
+$_['heading_title'] = 'صفحه مورد نظر وجود ندارد ، بیخودی تلاش نکن 😁';
 
 // Text
-$_['text_error']    = 'The page you requested cannot be found.';
+$_['text_error']    = 'صفحه مورد نظر وجود ندارد ، بیخودی تلاش نکن 😁';

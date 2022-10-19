@@ -1,14 +1,14 @@
 <?php
 // Text
-$_['text_cart']       = 'Success: You have modified your shopping cart!';
-$_['text_for']        = '%s Gift certificate for %s';
-$_['text_success']    = 'Success: Your gift voucher discount has been applied!';
-$_['text_remove']     = 'Success: Your gift voucher discount has been removed!';
+$_['text_cart']       = 'شما با موفقیت سبد خرید خود را تغییر دادید';
+$_['text_for']        = '%s کد هدیه برای %s';
+$_['text_success']    = 'کد تخفیف هدیه شما با موفقیت اعمال شد';
+$_['text_remove']     = 'کد تخفیف هدیه شما با موفقیت حدف شد';
 
 // Error
-$_['error_voucher']   = 'Warning: Gift voucher is either invalid or the balance has been used up!';
-$_['error_to_name']   = 'Recipient\'s Name must be between 1 and 64 characters!';
-$_['error_from_name'] = 'Your Name must be between 1 and 64 characters!';
-$_['error_email']     = 'E-Mail Address does not appear to be valid!';
-$_['error_theme']     = 'You must select a theme!';
-$_['error_amount']    = 'Amount must be between %s and %s!';
+$_['error_voucher']   = 'هشدار : کد هدیه شما اشتباه است یا قبلا استفاده شده است';
+$_['error_to_name']   = 'نام دریافت کننده باید بین 1 الی 64 کاراکتر باشد';
+$_['error_from_name'] = 'نام شما باید بین 1 الی 64 کاراکتر باشد';
+$_['error_email']     = 'آدرس ایمیل وارد شده معتبر نیست';
+$_['error_theme']     = 'یه شکلی رو باید براش انتخاب کنی';
+$_['error_amount']    = 'مقدار وارد شده باید بین %s و %s باشه!';

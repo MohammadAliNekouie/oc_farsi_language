@@ -1,14 +1,14 @@
 <?php
 // Text
-$_['text_success']       = 'Success: Payment address has been set!';
+$_['text_success']       = 'مسیر پرداخت با موفقیت ثبت گردید';
 
 // Error
-$_['error_firstname']    = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']     = 'Last Name must be between 1 and 32 characters!';
-$_['error_address_1']    = 'Address 1 must be between 3 and 128 characters!';
-$_['error_city']         = 'City must be between 3 and 128 characters!';
-$_['error_postcode']     = 'Postcode must be between 2 and 10 characters for this country!';
-$_['error_country']      = 'Please select a country!';
-$_['error_zone']         = 'Please select a region / state!';
-$_['error_custom_field'] = '%s required!';
-$_['error_regex']        = '%s is not a valid input!';
+$_['error_firstname']    = 'نام شما باید بین 1 الی 32 کاراکتر باشد';
+$_['error_lastname']     = 'نام خانوادگی شما باید بین 1 الی 32 کاراکتر باشد';
+$_['error_address_1']    = 'آدرس شما باید بین 3 الی 128 کاراکتر باشد';
+$_['error_city']         = 'نام شهر باید بین 2  تا 128 کاراکتر باشد';
+$_['error_postcode']     = 'کد پستی باید 10 رقمی باشد';
+$_['error_country']      = 'لطفا کشور خود را انتخاب کنید';
+$_['error_zone']         = 'لطفا استان خود را انتخاب کنید';
+$_['error_custom_field'] = '%s این فیلد ضروری است';
+$_['error_regex']        = '%s مقدار این فیلد نامعتبر است';

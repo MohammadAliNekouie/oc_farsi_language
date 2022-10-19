@@ -1,18 +1,18 @@
 <?php
 // Heading
-$_['heading_title']         = 'Payment Methods';
+$_['heading_title']         = 'روش های پرداخت';
 
 // Text
-$_['text_account']          = 'Account';
-$_['text_payment_method']   = 'Payment Method Entries';
-$_['text_success']          = 'Your payment method has been successfully deleted';
-$_['text_no_results']       = 'You have no payment methods in your account.';
+$_['text_account']          = 'حساب کاربری';
+$_['text_payment_method']   = 'لیست روشهای پرداخت';
+$_['text_success']          = 'روش پرداخت مد نظر شما با موفقیت حذف شد';
+$_['text_no_results']       = 'شما هیچ روش پرداخت ثبت شده ای ندارید';
 
 // Column
-$_['column_payment_method'] = 'Payment Method';
-$_['column_type']           = 'Type';
-$_['column_date_expire']    = 'Date Expires';
-$_['column_action']         = 'Action';
+$_['column_payment_method'] = 'روش پرداخت';
+$_['column_type']           = 'نوع';
+$_['column_date_expire']    = 'زمان انقضا';
+$_['column_action']         = 'انجام شود';
 
 // Error
-$_['error_payment_method']  = 'Warning: Payment method could not be found!';
+$_['error_payment_method']  = 'اخطار ، روش پرداخت یافت نشد';

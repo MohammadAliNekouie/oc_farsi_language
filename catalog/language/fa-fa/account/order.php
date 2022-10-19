@@ -1,37 +1,37 @@
 <?php
 // Heading
-$_['heading_title']         = 'Order History';
+$_['heading_title']         = 'سفارشات';
 
 // Text
-$_['text_account']          = 'Account';
-$_['text_order']            = 'Order Information';
-$_['text_order_detail']     = 'Order Details';
-$_['text_invoice_no']       = 'Invoice No.:';
-$_['text_order_id']         = 'Order ID:';
-$_['text_date_added']       = 'Date Added:';
-$_['text_shipping_address'] = 'Shipping Address';
-$_['text_shipping_method']  = 'Shipping Method:';
-$_['text_payment_address']  = 'Payment Address';
-$_['text_payment_method']   = 'Payment Method:';
-$_['text_comment']          = 'Order Comments';
-$_['text_history']          = 'Order History';
-$_['text_success']          = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">shopping cart</a>!';
-$_['text_no_results']       = 'You have not made any previous orders!';
-$_['text_error']            = 'The order you requested could not be found!';
+$_['text_account']          = 'حساب کاربری';
+$_['text_order']            = 'اطلاعات سفارش';
+$_['text_order_detail']     = 'جزئیات سفارش';
+$_['text_invoice_no']       = 'شماره فاکتور :';
+$_['text_order_id']         = 'شناسه سفارش :';
+$_['text_date_added']       = 'تاریخ سفارش :';
+$_['text_shipping_address'] = 'آدرس حمل :';
+$_['text_shipping_method']  = 'نحوه ارسال :';
+$_['text_payment_address']  = 'مسیر پرداخت';
+$_['text_payment_method']   = 'روش پرداخت :';
+$_['text_comment']          = 'توضیحات';
+$_['text_history']          = 'تاریخچه سفارش';
+$_['text_success']          = 'موفقیت: شما <a href="%s">%s</a> را به <a href="%s">سبد خرید</a> خود اضافه کرده‌اید!';
+$_['text_no_results']       = 'شما هیچ سفارش ثبت شده ای ندارید';
+$_['text_error']            = 'سفارش مد نظر شما یافت نشد';
 
 // Column
-$_['column_order_id']       = 'Order ID';
-$_['column_customer']       = 'Customer';
-$_['column_product']        = 'No. of Products';
-$_['column_name']           = 'Product Name';
-$_['column_model']          = 'Model';
-$_['column_quantity']       = 'Quantity';
-$_['column_price']          = 'Price';
-$_['column_total']          = 'Total';
-$_['column_action']         = 'Action';
-$_['column_date_added']     = 'Date Added';
-$_['column_status']         = 'Status';
-$_['column_comment']        = 'Comment';
+$_['column_order_id']       = 'شناسه سفارش';
+$_['column_customer']       = 'نام مشتری';
+$_['column_product']        = 'تعداد کل اقلام سفارش';
+$_['column_name']           = 'نام کالا';
+$_['column_model']          = 'مدل';
+$_['column_quantity']       = 'تعداد';
+$_['column_price']          = 'قیمت';
+$_['column_total']          = 'جمع کل';
+$_['column_action']         = 'عمکرد';
+$_['column_date_added']     = 'تاریخ اضافه شدن به سفارش';
+$_['column_status']         = 'وضعیت';
+$_['column_comment']        = 'توضیحات';
 
 // Error
-$_['error_reorder']         = '%s is not currently available to be reordered.';
+$_['error_reorder']         = '%s امکان سفارش مجدد این سفارش وجود ندارد';

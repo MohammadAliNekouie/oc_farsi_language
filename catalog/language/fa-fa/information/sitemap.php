@@ -1,17 +1,17 @@
 <?php
 // Heading
-$_['heading_title']    = 'Site Map';
+$_['heading_title']    = 'نقشه سایت';
 
 // Text
-$_['text_special']     = 'Special Offers';
-$_['text_account']     = 'My Account';
-$_['text_edit']        = 'Account Information';
-$_['text_password']    = 'Password';
-$_['text_address']     = 'Address Book';
-$_['text_history']     = 'Order History';
-$_['text_download']    = 'Downloads';
-$_['text_cart']        = 'Shopping Cart';
-$_['text_checkout']    = 'Checkout';
-$_['text_search']      = 'Search';
-$_['text_information'] = 'Information';
-$_['text_contact']     = 'Contact Us';
+$_['text_special']     = 'شگفت انگیز';
+$_['text_account']     = 'حساب کاربری';
+$_['text_edit']        = 'اطلاعات حساب';
+$_['text_password']    = 'تغییر کلمه عبور';
+$_['text_address']     = 'آدرس های ثبت شده';
+$_['text_history']     = 'سفارشات گذشته';
+$_['text_download']    = 'دانلودها';
+$_['text_cart']        = 'سبد خرید';
+$_['text_checkout']    = 'تسویه حساب';
+$_['text_search']      = 'جستجو';
+$_['text_information'] = 'درباره ما';
+$_['text_contact']     = 'ارتباط با ما';

@@ -1,14 +1,14 @@
 <?php
 // Heading
-$_['heading_title']      = 'Your Reward Points';
+$_['heading_title']      = 'امتیازات';
 
 // Column
-$_['column_date_added']  = 'Date Added';
-$_['column_description'] = 'Description';
-$_['column_points']      = 'Points';
+$_['column_date_added']  = 'تاریخ ثبت';
+$_['column_description'] = 'شرح';
+$_['column_points']      = 'امتیاز';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_reward']        = 'Reward Points';
-$_['text_total']         = 'Your total number of reward points is:';
-$_['text_no_results']    = 'You do not have any reward points!';
+$_['text_account']       = 'حساب کاربری';
+$_['text_reward']        = 'امتیازات';
+$_['text_total']         = 'جمع کل امتیازات شما تا این لحظه:';
+$_['text_no_results']    = 'شما هنوز هیچ امتیازی ندارید!';

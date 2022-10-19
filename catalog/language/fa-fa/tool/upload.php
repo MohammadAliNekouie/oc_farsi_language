@@ -1,8 +1,8 @@
 <?php
 // Text
-$_['text_upload']     = 'Your file was successfully uploaded!';
+$_['text_upload']     = 'فایل شما با موفقیت بارگذاری شد';
 
 // Error
-$_['error_filename']  = 'Filename must be between 3 and 64 characters!';
-$_['error_file_type'] = 'Invalid file type!';
-$_['error_upload']    = 'Upload required!';
+$_['error_filename']  = 'نام فایل باید بین 3 الی 64 کاراکتر باشد';
+$_['error_file_type'] = 'این نوع فایل قابل فبول نیست';
+$_['error_upload']    = 'باید حتما بارگذاری شود';

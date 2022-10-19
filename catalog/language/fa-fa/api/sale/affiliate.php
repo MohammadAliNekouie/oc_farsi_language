@@ -1,7 +1,7 @@
 <?php
 // Text
-$_['text_success']    = 'Success: Affiliate commission will be appliyed to this order!';
-$_['text_remove']     = 'Success: Your affiliate commission has been removed!';
+$_['text_success']    = 'کمیسیون شما برای این سفارش اعمال خواهد شد';
+$_['text_remove']     = 'کمیسیون شما حذف گردید';
 
 // Error
-$_['error_affiliate'] = 'Warning: Affiliate could not be found!';
+$_['error_affiliate'] = 'هشدار : ارتباط شما قابل شناسایی نیست';

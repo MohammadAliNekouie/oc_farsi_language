@@ -1,11 +1,11 @@
 <?php
 // Heading
-$_['heading_title']    = 'Newsletter Subscription';
+$_['heading_title']    = 'عضویت در خبرنامه';
 
 // Text
-$_['text_account']     = 'Account';
-$_['text_newsletter']  = 'Newsletter';
-$_['text_success']     = 'Success: Your newsletter subscription has been successfully updated!';
+$_['text_account']     = 'حساب کاربری';
+$_['text_newsletter']  = 'خبرنامه';
+$_['text_success']     = 'تبریک ، شما با موفقیت در خبرنامه فروشگاه عضو شدید';
 
 // Entry
-$_['entry_newsletter'] = 'Subscribe';
+$_['entry_newsletter'] = 'عضویت';

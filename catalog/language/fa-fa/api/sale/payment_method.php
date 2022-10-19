@@ -1,9 +1,9 @@
 <?php
 // Text
-$_['text_success']          = 'Success: Payment method has been set!';
+$_['text_success']          = 'روش پرداخت با موفقیت ثبت شد';
 
 // Error
-$_['error_payment_address'] = 'Warning: Payment address required!';
-$_['error_payment_method']  = 'Warning: Payment method required!';
-$_['error_no_payment']      = 'Warning: No payment options are available!';
-$_['error_product']         = 'Warning: Products required!';
+$_['error_payment_address'] = 'هشدار : مسیر پرداخت را وارد نمایید';
+$_['error_payment_method']  = 'هشدار : روش پرداخت را مشخص نمایید';
+$_['error_no_payment']      = 'هشدار : هیچ گزینه ای برای پرداخت وجود ندارد';
+$_['error_product']         = 'هشدار : محصول را مشخص نمایید';

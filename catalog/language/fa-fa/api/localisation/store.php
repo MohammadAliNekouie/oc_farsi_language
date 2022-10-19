@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_success'] = 'Success: Store has been changed!';
+$_['text_success'] = 'فروشگاه با موفقیت تغییر کرد';
 
 // Error
-$_['error_store']  = 'Warning: Store could not be found!';
+$_['error_store']  = 'هشدار : فروشگاه یافت نشد';
